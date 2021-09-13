@@ -39,9 +39,8 @@ body {
 .single-product {
   background-color:#DCDCDC;
   width: 98%;
-  height: 400px;
+  height: 420px;
   padding: 10px;
-  margin-top: 5px;
   transition: 0.6s;
   border-radius: 5px;
 }
@@ -66,6 +65,16 @@ body {
 .cart-main {
   padding-right: 30px;
 }
+.show-details{
+background-color:rgb(214, 209, 209);
+width: 350px;
+height: 350px;
+padding: 20px;
+margin: auto;
+margin-bottom: 20px;
+text-align: center;
+}
+
 @media only screen and (max-width: 768px) {
   #all-products {
     display: grid;

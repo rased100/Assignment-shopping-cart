@@ -4,6 +4,8 @@ const loadProducts = () => {
 };
 
 
+
+
 // show all product in UI 
 const showProducts = (products) => {
   const allProducts = products.map((pd) => pd);
@@ -23,11 +25,12 @@ const showProducts = (products) => {
       <p>Total rating: ${product.rating.count}</p>
       <p>Avarage rating: ${product.rating.rate}</p>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
-      <button id="details-btn" class="btn btn-danger">Details</button></div>
+      <button onclick="showDetails()" id="details-btn" class="btn btn-danger">Details</button></div>
     `;
     document.getElementById("all-products").appendChild(div);
   }
 };
+
 let count = 0;
 const addToCart = (id, price) => {
   count = count + 1;
@@ -83,4 +86,20 @@ const updateTotal = () => {
     getInputValue("total-tax");
   document.getElementById("total").innerText = grandTotal.toFixed(2);
 };
+
+
+
+
+const showDetails = () => {
+  document.getElementById("detail-text").textContent = '';
+  const div = document.createElement('div');
+  div.classList.add("show-details");
+  div.innerHTML = `
+  <p>Details:  </p>
+    `;
+
+  document.getElementById("detail-text").appendChild(div);
+}
+// ${product.category}
+
 loadProducts();
