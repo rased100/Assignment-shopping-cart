@@ -18,26 +18,32 @@ body {
   border-radius: 5px;
   margin: auto;
   margin-top: 50px;
-  border-right: none;
+  margin-bottom: 50px;
+  margin-left: 35%;
+  display: inline-block;
 }
 .search-button {
   padding: 10px 50px;
   border-radius: 25px;
-  margin-left: 20px;
 }
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   /* border: 1px solid black; */
   text-align: center;
-  width: 100%;
+  width: 98%;
   margin: auto;
   align-items: center;
   justify-content: center;
 }
 .single-product {
+  background-color:#DCDCDC;
+  width: 98%;
+  height: 400px;
   padding: 10px;
+  margin-top: 5px;
   transition: 0.6s;
+  border-radius: 5px;
 }
 .single-product:hover {
   box-shadow: 4px 4px 7px gray;
