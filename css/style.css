@@ -38,6 +38,7 @@ body {
 }
 .single-product {
   background-color:#DCDCDC;
+  /* background-color: #49a191; */
   width: 98%;
   height: 420px;
   margin: 10px;
@@ -67,9 +68,9 @@ body {
   padding-right: 30px;
 }
 .show-details{
-background-color:rgb(214, 209, 209);
+background-color:#DCDCDC;
 width: 350px;
-/* height: 350px; */
+border-radius: 5px;
 padding: 20px;
 margin: auto;
 margin-bottom: 20px;
